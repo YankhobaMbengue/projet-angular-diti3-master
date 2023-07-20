@@ -1,0 +1,53 @@
+{
+  "employes": [
+    {
+      "id": 5,
+      "nom": "MBENGUE",
+      "prenom": "Yankhoba",
+      "salaire": 50000000,
+      "ids": 2
+    },
+    {
+      "nom": "GAYE",
+      "prenom": "Abdoulaye",
+      "salaire": 500000,
+      "id": 6,
+      "ids": 2
+    },
+    {
+      "id": 7,
+      "nom": "HAMANE ADJI",
+      "prenom": "SOULEYMANE",
+      "salaire": 2000,
+      "ids": 1
+    },
+    {
+      "id": 8,
+      "nom": "NDIAYE",
+      "prenom": "MARIE",
+      "salaire": 0,
+      "ids": 3
+    },
+    {
+      "id": 9,
+      "nom": "LO",
+      "prenom": "makhmadane",
+      "salaire": 0,
+      "ids": 2
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "nom": "RH"
+    },
+    {
+      "id": 2,
+      "nom": "INFORMATIQUE"
+    },
+    {
+      "id": 3,
+      "nom": "MARKETING"
+    }
+  ]
+}

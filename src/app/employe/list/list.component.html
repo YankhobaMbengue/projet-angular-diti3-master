@@ -1,0 +1,36 @@
+<div class="container text-center">
+    <div class="mt-5 mb-3 display-4" style="background-color: antiquewhite;">
+        Liste des employés
+    </div>
+    <div class="input-group flex-nowrap mb-2 mt-2">
+      <span class="input-group-text text-primary" id="addon-wrapping"><b><i>Rechercher Par </i></b></span>
+      <input type="text" class="form-control text-center" placeholder="Rechercher un employé par prénom, nom, salaire ou service" aria-label="Search Table Data" aria-describedby="addon-wrapping" [(ngModel)]="searchBY">
+    </div>
+    <div>
+        <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Salaire</th>
+                <th scope="col">Service</th>
+                <th scope="col" colspan="2">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let e of getfilteredEmployes()">
+                <th scope="row">{{ e.id }}</th>
+                <td>{{ e.nom | uppercase }}</td>
+                <td>{{ e.prenom | titlecase }}</td>
+                <td>{{ e.salaire }}</td>
+                <td>{{ getServiceName(e.ids) }}</td>
+                <td>
+                    <a [routerLink]="['/employe/edit', e.id]" class="btn btn-outline-warning mr-3">Modifier</a>
+                    <a (click)="delete(e.id)" class="btn btn-outline-danger">Supprimer</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
